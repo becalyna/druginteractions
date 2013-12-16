@@ -4,6 +4,7 @@
 include("directoryConnect.php");
 
 if (!$enzyme) {
+
 	$enzyme = 0;
 }
 
@@ -12,7 +13,16 @@ if (!$action) {
 }
 
 if (!$searchterm) {
-	$searchterm = 0;
+
+	if ($_POST['searchterm']) {
+		
+		$searchterm = htmlentities($_POST['searchterm']);
+
+		$wild="%".$searchterm."%";
+	
+	} else {
+		$searchterm = 0;
+	}
 }
 
 

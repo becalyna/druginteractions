@@ -40,22 +40,16 @@
 
             <li>
                 <div data-role="controlgroup" data-type="horizontal">
-                    <a href="index.php" data-role="button" data-mini="true">All</a>
-                    <a href="substrates.php" data-role="button" data-mini="true">Substrates</a>
-                    <a href="inhibitors.php" data-role="button" data-mini="true" class="ui-btn-active">Inhibitors</a>
-                    <a href="inducers.php" data-role="button" data-mini="true">Inducers</a>
+                    <a href="index.php" data-role="button" data-mini="true" id="all">All</a>
+                    <a href="substrates.php" data-role="button" data-mini="true" id="sub">Substrates</a>
+                    <a href="inhibitors.php" data-role="button" data-mini="true" id="inh">Inhibitors</a>
+                    <a href="inducers.php" data-role="button" data-mini="true" class="ui-btn-active" id="ind">Inducers</a>
                 </div>
-            </li>
-
-            <li>
-                <form>
-                    <input id="searchterm" type="search" name="searchterm">
-                </form>
             </li>
 
         </ul>
 
-        <ul id="druglist" data-role="listview">
+        <ul id="druglist" data-filter="true" data-role="listview">
             <?php
 
 				$action[] = 2;

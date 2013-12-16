@@ -16,6 +16,16 @@
 }
 
 */
+.ui-mini .ui-btn-inner {
+
+	padding: 7px 0px;
+
+}
+
+.ui-controlgroup-horizontal .ui-controlgroup-controls {
+	display: block;
+	width: 100% ;
+}
 
 .ui-header .ui-title {
     margin-right: 10%;
@@ -23,21 +33,25 @@
 }
 
 #all {
-	width:15%;
+	width:10%;
 	padding-left:2px;
 	padding-right:2px;
 }
 
 #sub {
-	width:30%;
+	width:25%;
 	padding-left:2px;
 	padding-right:2px;
 }
 
 #inh {
-	width:30%;
+	width:25%;
+	padding-left:2px;
+	padding-right:2px;
 }
 
 #ind {
-	width:20%;
+	width:30%;
+	padding-left:2px;
+	padding-right:2px;
 }

@@ -38,18 +38,6 @@
         <ul data-role="listview">
 
             <li><h3> P450 Interactions Table </h3></li>
-            
-<!--            
-        <div data-role="navbar">
-            <ul>
-                <li><a href="#" data-role="button" data-mini="true" id="all">All</a></li>
-                <li><a href="#" data-role="button" data-mini="true" id="sub">Substrates</a></li>
-                <li><a href="#" data-role="button" id="inh">Inhibitors</a></li>
-                <li><a href="#" data-role="button" id="ind">Inducers</a></li>
-            </ul>
-        </div>
--->
-
 
             <li>
                 <div data-role="controlgroup" data-type="horizontal">
@@ -60,15 +48,10 @@
                 </div>
             </li>
 
-            <li>
-                <form>
-                    <input id="searchterm" type="search" name="searchterm">
-                </form>
-            </li>
 
         </ul>
 
-        <ul id="druglist" data-role="listview">
+        <ul id="druglist"  data-filter="true" data-role="listview">
             <?php
                 include("php/getEnzyme.php");
             ?>

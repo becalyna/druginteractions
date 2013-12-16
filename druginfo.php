@@ -37,7 +37,7 @@
 
     <div data-role="header">
         <?php 
-        echo '<a href="' . $referrer . '" data-role="button" data-icon="home" data-iconpos="notext" data-theme="b" data-iconshadow="false" data-inline="true">Home</a>'; 
+        echo '<a href="' . $referrer . '" data-role="button" data-icon="back" data-iconpos="notext" data-theme="b" data-iconshadow="false" data-inline="true">Home</a>';
         ?>
         <h1> Drug Information</h1>
     	<a href="index.php/#info" data-role="button" data-icon="info" data-iconpos="notext" data-theme="b" data-iconshadow="false" data-inline="true">Info</a>    
