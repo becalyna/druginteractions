@@ -24,12 +24,14 @@
 <!-- Using PHP includes to separate pages  -->
 
 <!-- Include First Page -->
-<div data-role="page" id="substrates">
+<div data-role="page" id="inducers">
 
     <div data-role="header">
+    
         <a href="#home" data-role="button" data-icon="home" data-iconpos="notext" data-theme="b" data-iconshadow="false" data-inline="true">Home</a>        
         <h1> Drug Interactions DB </h1>
         <a href="#info" data-role="button" data-icon="info" data-iconpos="notext" data-theme="b" data-iconshadow="false" data-inline="true">Info</a>    
+
     </div>
 
     <div data-role="content">
@@ -41,9 +43,9 @@
             <li>
                 <div data-role="controlgroup" data-type="horizontal">
                     <a href="index.php" data-role="button" data-mini="true">All</a>
-                    <a href="substrates.php" data-role="button" data-mini="true" class="ui-btn-active">Substrates</a>
+                    <a href="substrates.php" data-role="button" data-mini="true">Substrates</a>
                     <a href="inhibitors.php" data-role="button" data-mini="true">Inhibitors</a>
-                    <a href="inducers.php" data-role="button" data-mini="true">Inducers</a>
+                    <a href="inducers.php" data-role="button" data-mini="true" class="ui-btn-active">Inducers</a>
                 </div>
             </li>
 
@@ -58,7 +60,7 @@
         <ul id="druglist" data-role="listview">
             <?php
 
-				$action[] = 1;
+				$action[] = 3;
                 include("php/getEnzyme.php");
             ?>
         </ul>

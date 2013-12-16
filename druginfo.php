@@ -18,6 +18,15 @@
     <script src="js/myscripts.js"></script>
 </head>
 
+<?php
+    $drug_id = $_REQUEST['drug_id'];
+
+   if ($_SERVER['HTTP_REFERER']) {
+        $referrer = htmlentities($_SERVER['HTTP_REFERER']);
+    } else {
+        $referrer = "index.php";
+    }
+?>
 
 <body>
 
@@ -27,7 +36,9 @@
 <div data-role="page" id="drug">
 
     <div data-role="header">
-		<a href="index.php" data-role="button" data-icon="home" data-iconpos="notext" data-theme="b" data-iconshadow="false" data-inline="true">Home</a>        
+        <?php 
+        echo '<a href="' . $referrer . '" data-role="button" data-icon="home" data-iconpos="notext" data-theme="b" data-iconshadow="false" data-inline="true">Home</a>'; 
+        ?>
         <h1> Drug Information</h1>
     	<a href="index.php/#info" data-role="button" data-icon="info" data-iconpos="notext" data-theme="b" data-iconshadow="false" data-inline="true">Info</a>    
     </div>
@@ -37,8 +48,6 @@
         <ul id="druglist" data-role="listview">
 
         <?php
-
-            $drug_id = $_REQUEST['drug_id'];
 
             include('php/getDrugInfo.php');
         ?>
