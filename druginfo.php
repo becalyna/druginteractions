@@ -35,12 +35,14 @@
     <div data-role="content">
 
         <ul id="druglist" data-role="listview">
-            <li>Drug: clozapine</li>
-            <li>Action: Substrate</li>
-            <li>Enzyme: 1A2</li>
-            <li>PubMed References:</li>
-            <li class="pubmed"><h3><a href="">Metabolism and bioactivation of clozapine by human liver in vitro.</a></h3></li>
-			<li class="pubmed"><h4><a href="">Clozapine disposition covaries with CYP1A2 activity determined by a caffeine test.</a></h4></li>
+
+        <?php
+
+            $drug_id = $_REQUEST['drug_id'];
+
+            include('php/getDrugInfo.php');
+        ?>
+
         </ul>
 
     </div>
