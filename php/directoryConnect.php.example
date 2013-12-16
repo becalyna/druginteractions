@@ -1,0 +1,16 @@
+<?php
+
+	$dbhost = 'host.com';
+	$dbuser = 'testuser';
+	$dbpwd  = 'testpass';
+	$dbname = 'testdb';
+	
+	$conn = mysql_connect($dbhost, $dbuser, $dbpwd);
+	$db   = mysql_select_db($dbname, $conn);
+	
+	if ($conn) {
+        //print "<p>Connected successfully to DB!</p>";
+    } else {
+        print "$conn -> Sorry, there was a error while connecting to the Database.<br>";
+    }
+?>
