@@ -33,23 +33,34 @@
     </div>
 
     <div data-role="content">
-
+    
+        
         <ul data-role="listview">
 
             <li><h3> P450 Interactions Table </h3></li>
+<!--            
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-role="button" data-mini="true" id="all">All</a></li>
+                <li><a href="#" data-role="button" data-mini="true" id="sub">Substrates</a></li>
+                <li><a href="#" data-role="button" id="inh">Inhibitors</a></li>
+                <li><a href="#" data-role="button" id="ind">Inducers</a></li>
+            </ul>
+        </div>
+-->
+
 
             <li>
                 <div data-role="controlgroup" data-type="horizontal">
-                    <a href="index.php" data-role="button" data-mini="true" class="ui-btn-active">All</a>
-                    <a href="substrates.php" data-role="button" data-mini="true">Substrates</a>
-                    <a href="inhibitors.php" data-role="button" data-mini="true">Inhibitors</a>
-                    <a href="inducers.php" data-role="button" data-mini="true">Inducers</a>
+                    <a href="index.php" data-role="button" data-mini="true" class="ui-btn-active" id="all">All</a>
+                    <a href="substrates.php" data-role="button" data-mini="true" id="sub">Substrates</a>
+                    <a href="inhibitors.php" data-role="button" data-mini="true" id="inh">Inhibitors</a>
+                    <a href="inducers.php" data-role="button" data-mini="true" id="ind">Inducers</a>
                 </div>
             </li>
 
             <li>
                 <form>
-                <a href="#" data-role="button" data-icon="search" data-iconpos="notext" data-theme="b" data-iconshadow="false" data-inline="true">Search</a>
                     <input id="searchterm" type="search" name="searchterm">
                 </form>
             </li>

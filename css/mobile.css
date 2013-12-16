@@ -21,3 +21,23 @@
     margin-right: 10%;
     margin-left: 10%;
 }
+
+#all {
+	width:15%;
+	padding-left:2px;
+	padding-right:2px;
+}
+
+#sub {
+	width:30%;
+	padding-left:2px;
+	padding-right:2px;
+}
+
+#inh {
+	width:30%;
+}
+
+#ind {
+	width:20%;
+}
