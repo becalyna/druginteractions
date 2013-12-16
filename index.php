@@ -49,7 +49,6 @@
 
             <li>
                 <form>
-                <a href="#" data-role="button" data-icon="search" data-iconpos="notext" data-theme="b" data-iconshadow="false" data-inline="true">Search</a>
                     <input id="searchterm" type="search" name="searchterm">
                 </form>
             </li>
