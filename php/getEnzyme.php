@@ -163,7 +163,7 @@ if ($action && !$enzyme) {
 	}
 
 	// base query
-	$query_base = "SELECT drug.drug_id, action_id, drug_name
+	$query_base = "SELECT DISTINCT drug.drug_id, action_id, drug_name
 					FROM drug, enzyme, enzyme_action
 					WHERE drug.drug_id = enzyme_action.drug_id
 					AND enzyme.enzyme_id = enzyme_action.enzyme_id
