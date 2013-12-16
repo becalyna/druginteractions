@@ -75,7 +75,7 @@ function printRes ($result, $class, $description) {
 
 		echo "<li>\n";
 
-		echo "\t<a href='drugInfo.php?drug_id=" . $row['drug_id'] . "'>" . $drugName . "</a>\n";
+		echo "\t<a href='druginfo.php?drug_id=" . $row['drug_id'] . "'>" . $drugName . "</a>\n";
 
 /*
 		if ($row['action_id'] == "1") {
