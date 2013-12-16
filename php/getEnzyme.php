@@ -3,11 +3,21 @@
 // Make the database connection
 include("directoryConnect.php");
 
-// assign the GET or POST variable called enzyme to our local variable $enzyme
-$enzyme=$_REQUEST['enzyme'];
-$action=$_REQUEST['action'];
+if (!$enzyme) {
+	$enzyme = 0;
+}
 
-$debugSet = $_REQUEST['debugSet'];
+if (!$action) {
+	$action = 0;
+}
+
+if (!$searchterm) {
+	$searchterm = 0;
+}
+
+
+// Set it to a value > 0 for debug info
+$debugSet = 0;
 
 
 // debug when I need it.
@@ -166,7 +176,7 @@ if ($action && !$enzyme) {
 		if ($value == "2") { $action_name = "Inhibitor"; }
 		if ($value == "3") { $action_name = "Inducer"; }
 
-		$query =  $query_base . "enzyme_action.action_id = '" . $value . "' ;";
+		$query =  $query_base . "enzyme_action.action_id = '" . $value . "' ORDER BY drug_name;";
 
 		// debug
 		if ($debugSet) {

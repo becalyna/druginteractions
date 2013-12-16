@@ -1,9 +1,23 @@
+/*
 .ui-page .ui-content .ui-listview .ui-li-desc {
     white-space : normal;
 }
+
 .ui-btn{
     text-align: left !important;
 }
+
 .hh {
     white-space: normal;
+}
+
+.pubmed {
+	background-color:#9CF;
+}
+
+*/
+
+.ui-header .ui-title {
+    margin-right: 10%;
+    margin-left: 10%;
 }

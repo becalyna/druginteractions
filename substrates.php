@@ -24,31 +24,49 @@
 <!-- Using PHP includes to separate pages  -->
 
 <!-- Include First Page -->
-<div data-role="page" id="drug">
+<div data-role="page" id="home">
 
     <div data-role="header">
-		<a href="index.php" data-role="button" data-icon="home" data-iconpos="notext" data-theme="b" data-iconshadow="false" data-inline="true">Home</a>        
-        <h1> Drug Information</h1>
-    	<a href="index.php/#info" data-role="button" data-icon="info" data-iconpos="notext" data-theme="b" data-iconshadow="false" data-inline="true">Info</a>    
+        <h1> Drug Interactions DB </h1>
     </div>
 
     <div data-role="content">
 
+        <ul data-role="listview">
+
+            <li><h3> P450 Interactions Table </h3></li>
+
+            <li>
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a href="index.php" data-role="button" data-mini="true">All</a>
+                    <a href="substrates.php" data-role="button" data-mini="true" class="ui-btn-active">Substrates</a>
+                    <a href="inhibitors.php" data-role="button" data-mini="true">Inhibitors</a>
+                    <a href="inducers.php" data-role="button" data-mini="true">Inducers</a>
+                </div>
+            </li>
+
+            <li>
+                <form>
+                    <input id="searchterm" type="search" name="searchterm">
+                </form>
+            </li>
+
+        </ul>
+
         <ul id="druglist" data-role="listview">
-            <li>Drug: clozapine</li>
-            <li>Action: Substrate</li>
-            <li>Enzyme: 1A2</li>
-            <li>PubMed References:</li>
-            <li class="pubmed"><h3><a href="">Metabolism and bioactivation of clozapine by human liver in vitro.</a></h3></li>
-			<li class="pubmed"><h4><a href="">Clozapine disposition covaries with CYP1A2 activity determined by a caffeine test.</a></h4></li>
+            <?php
+
+				$action[] = 1;
+                include("php/getEnzyme.php");
+            ?>
         </ul>
 
     </div>
 
     <?php 
         include("inc/footer.inc");
-    ?>  
-
+    ?> 
+    
 </div>
 <!-- End Home Page -->
 
