@@ -6,6 +6,7 @@
     <title>Drug Interactions</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="apple-touch-icon" href="images/drugint.png" />
 
     <link href='http://fonts.googleapis.com/css?family=Stoke' rel='stylesheet' type='text/css'>
