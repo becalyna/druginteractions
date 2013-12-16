@@ -1,8 +1,8 @@
 <?php
 
-	$dbhost = 'localhost';
-	$dbuser = 'test';
-	$dbpwd  = 'test';
+	$dbhost = 'beckylynch.com';
+	$dbuser = 'becalyna';
+	$dbpwd  = 'cobra450';
 	$dbname = 'druginteractions';
 	
 	$conn = mysql_connect($dbhost, $dbuser, $dbpwd);

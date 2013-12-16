@@ -80,7 +80,7 @@ if ($drug_id) {
 				$pmid = htmlentities($row['PMID']);
 
 	            echo "<li class='pubmed'>\n";
-	            echo "<h3><a href='http://www.ncbi.nlm.nih.gov/pubmed/?term='$pmid'>";
+	            echo "<h3><a href='http://www.ncbi.nlm.nih.gov/pubmed/?term=$pmid'>";
 	            echo "$title</a></h3>\n</li>";
 
 			}
